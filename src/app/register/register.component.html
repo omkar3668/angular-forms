@@ -1,0 +1,30 @@
+<div class="text-center center-div">
+    <div class="container w-25 border py-5">
+        <div class="title pb-3">
+            <h2 class="font-weight-bold">Register Form</h2>
+        </div>
+        <div class="contanier-fluid">
+            <form [formGroup]="registerForm" (ngSubmit)="register()">
+                <div class="form-group">
+                    <input type="text" formControlName="firstname" class="form-control" placeholder="FirstName">
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" formControlName="lastname" class="form-control" placeholder="LastName">
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" formControlName="mobilenumber" class="form-control" placeholder="MobileNumber">
+                </div>
+                <div class="form-group mt-3">
+                    <input type="email" formControlName="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group mt-3">
+                    <input type="password" formControlName="password" class="form-control" placeholder="Password">
+                </div>
+                <button class="btn btn-success rounded-pill mt-3" type="submit">Register</button>
+            </form>
+        </div>
+        <a style="color: red; margin-top: 10px;" routerLink="/login">Already register user? click to login</a>
+    </div>
+</div>
+
+
